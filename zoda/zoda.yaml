@@ -1,0 +1,50 @@
+log-view:
+  nickname-format: '(%n) '
+  scroller-highlight-color: '#f00'
+input-text:
+  font-family: 'Hobo Std'
+  font-size: 13.0
+  background-color: '#000000'
+  color: '#a2a09c'
+  selected:
+    background-color: '#ccc'
+member-list:
+  font-family: 'Hobo Std'
+  font-size: 13.0
+  color: '#64635c'
+  background-color: '#000000'
+  operator:
+    color: '#9932CC'
+  selected:
+    color: '#9932CC'
+    background:
+      # gradient
+      top-line-color: '#DCDCDC'
+      bottom-line-color: '#DCDCDC'
+      top-color: '#DCDCDC'
+      bottom-color: '#DCDCDC'
+server-tree:
+  font-family: 'Hobo Std'
+  font-size: 13.0
+  background-color: '#000000'
+  highlight:
+    color: '#DCDCDC'
+  newtalk:
+    color: '#f00'
+  unread:
+    color: '#bc5767'
+  normal:
+    active:
+      color: '#64635c'
+    inactive:
+      color: '#64635c'
+  selected:
+    active:
+      color: '#9932CC'
+    inactive:
+      color: '#9932CC'
+    background:
+      top-line-color: '#DCDCDC'
+      bottom-line-color: '#DCDCDC'
+      top-color: '#DCDCDC'
+      bottom-color: '#DCDCDC'
