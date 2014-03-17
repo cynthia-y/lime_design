@@ -1,0 +1,80 @@
+html {
+  font-family: 'Courier';
+  font-size: 9pt;
+  background-color: #000000;
+  color: #DCDCDC;
+  word-wrap: break-word;
+  margin: 0;
+  padding: 3px 4px 10px 4px;
+}
+ 
+body { margin: 0; padding: 0; }
+ 
+body.normal {}
+body.console {}
+body[type=channel] {}
+body[type=talk] {}
+body[type=console] {}
+body[channelname=#limechat] {}
+ 
+hr { margin: 0.5em 2em; }
+a {}
+.inlineimage {}
+ 
+/* lines */
+.line { margin: 2px 0;padding: 0 3px 0;}
+.line[nick*="shinshia"] { background-color: #323232; margin: 2px 0; padding: 4px 0; border-radius: 15px; }
+.highlight.line {background-color: #323232: margin :2px 0; padding: 4px 0; border-radius: 15px; }
+.line[alternate=odd] {}
+/*
+.line[type=reply] {
+    background-color: #191970;
+    border-radius: 4px;
+    border: 1px solid #191970;
+}*/
+.line[type=action] .sender:before {
+  content: "• ";
+  white-space: nowrap;
+}
+/*
+.line[highlight=true] {
+  background-color: #aedbc9;
+}
+*/
+.url { color: #DCDCDC; word-break: break-all; }
+.address { color: #a2a09c; text-decoration: underline; word-break: break-all; }
+.highlight { font-size: 25pt; color: #bc5767; font-weight: bold; }
+.time { color: #594E51; }
+.place { color: #7c6dc7; }
+ 
+.sender{
+    display: inline-block;
+    text-align: left;
+    width: 140px;
+    margin-right: 10px;
+}
+.sender[type=myself] { color: #9932CC; }
+.sender[type=normal] { color: #9932CC; }
+ 
+/* message body */
+.message[type=system] { color: #a2a09c; }
+.message[type=error] { color: #f00; font-weight: bold; }
+.message[type=reply] { color: #666666; }
+.message[type=error_reply] { color: #f00; }
+.message[type=dcc_send_send] { color: #088; }
+.message[type=dcc_send_receive] { color: #00c; }
+.message[type=privmsg]  {}
+.message[type=notice] { color: #888;}
+.message[type=action] { color: #a2a09c; font-size:90%; }
+.message[type=join] { color: #a2a09c; font-size:90%; }
+.message[type=part] { color: #a2a09c; font-size:90%; }
+.message[type=kick] { color: #a2a09c; font-size:90%; }
+.message[type=quit] { color: #a2a09c; font-size:90%; }
+.message[type=kill] { color: #a2a09c; font-size:90%; }
+.message[type=nick] { color: #a2a09c; font-size:90%; }
+.message[type=mode] { color: #a2a09c; font-size:90%; }
+.message[type=topic] { color: #a2a09c; font-size:90%; }
+.message[type=invite] { color: #a2a09c; font-size:90%; }
+.message[type=wallops] { color: #a2a09c; font-size:90%; }
+.message[type=debug_send] { color: #aaa; font-size:90%; }
+.message[type=debug_receive] { color: #444; font-size:90%; }
